@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const response = await fetch("http://live.radiomixx.ro:8000/stats?sid=1&json=1");
+    const response = await fetch("http://live.radiomixx.ro:8888/stats?sid=1&json=1");
     const data = await response.json();
 
     const currentSong = data.songtitle || "Unknown";
